@@ -47,6 +47,6 @@ const (
 	Tcp       = "tcp"
 	Suffix    = "\n"
 
-	ServerFilesPath = "C:/Users/Jasur/Desktop/Projects/tcp-server/cmd/rpc/server/files/"
-	ClientFilesPath = "C:/Users/Jasur/Desktop/Projects/tcp-server/cmd/rpc/client/files/"
+	ServerFilesPath = "./cmd/rpc/server/files/"
+	ClientFilesPath = "./cmd/rpc/client/files/"
 )
