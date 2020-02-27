@@ -48,13 +48,6 @@ func Test_DownloadFromServer(t *testing.T) {
 
 func Test_UploadToServer(t *testing.T) {
 	address := "localhost:9999"
-	//go func() {
-	//	err := startServer(address)
-	//	if err != nil {
-	//		t.Fatalf("can't start server: %v", err)
-	//	}
-	//}()
-	//time.Sleep(time.Millisecond)
 	conn, err := net.Dial(rpc.Tcp, address)
 	if err != nil {
 		t.Fatalf("can't connect to server: %v", err)
@@ -93,13 +86,6 @@ func Test_UploadToServer(t *testing.T) {
 
 func Test_GetFileListFromServer(t *testing.T)  {
 	address := "localhost:9999"
-	//go func() {
-	//	err := startServer(address)
-	//	if err != nil {
-	//		t.Fatalf("can't start server: %v", err)
-	//	}
-	//}()
-	//time.Sleep(time.Millisecond)
 	conn, err := net.Dial(rpc.Tcp, address)
 	if err != nil {
 		t.Fatalf("can't connect to server: %v", err)
